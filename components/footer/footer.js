@@ -1,12 +1,12 @@
 class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback () {
-        const shadowRoot = this.attachShadow({mode: "open"});
-        shadowRoot.innerHTML = "footer"   
-    }
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    shadowRoot.innerHTML = "footer";
+  }
 }
 
-customElements.define("page-footer", Footer)
+customElements.define("page-footer", Footer);

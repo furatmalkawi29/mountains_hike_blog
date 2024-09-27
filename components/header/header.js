@@ -1,12 +1,12 @@
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor() {
+    super();
+  }
 
-    connectedCallback () {
-        const shadowRoot = this.attachShadow({mode: "open"});
-        shadowRoot.innerHTML = "header"   
-    }
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: "open" });
+    shadowRoot.innerHTML = "header";
+  }
 }
 
-customElements.define("page-header", Header)
+customElements.define("page-header", Header);
