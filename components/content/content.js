@@ -1,14 +1,15 @@
-import heroTemplate from "./template.js";
 import { parallaxScrollHandler } from '../../helpers/parallax.js';
+import contentTemplate from './template.js';
 
-class Hero extends HTMLElement {
+class Content extends HTMLElement {
   constructor() {
     super();
     this.template = document.createElement("template");
   }
 
+
   initializeTemplate() {
-    this.template.innerHTML = heroTemplate;
+    this.template.innerHTML = contentTemplate;
   }
 
   connectedCallback() {
@@ -22,4 +23,4 @@ class Hero extends HTMLElement {
   }
 }
 
-customElements.define("page-hero", Hero);
+customElements.define("page-content", Content);

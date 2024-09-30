@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MNTN</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <page-header></page-header>
+    <!-- <page-header></page-header> -->
     <main>
+      <!-- <div class="parallax" data-layer-type="parallax" data-layer-depth="00"></div>
+<div class="parallax2" data-layer-type="parallax" data-layer-depth="1.50"></div> -->
+
       <page-hero></page-hero>
-      <step-card></step-card>
-      <step-card></step-card>
+      <!-- <div class="content" data-layer-type="parallax" data-layer-depth="1.1">
+        Scroll Up and Down this page to see the parallax scrolling effect. This
+        div is just here to enable scrolling. Tip: Try to remove the
+        background-attachment property to remove the scrolling effect.
+      </div> -->
+      <page-content></page-content>
     </main>
-    <page-footer></page-footer>
+    <!-- <page-footer></page-footer> -->
 
     <script type="module" src="index.js"></script>
-    <script type="module" src="components/StepCard/StepCard.js"></script>
     <script type="module" src="components/header/header.js"></script>
     <script type="module" src="components/footer/footer.js"></script>
     <script type="module" src="components/hero/hero.js"></script>
+    <script type="module" src="components/content/content.js"></script>
+    <script type="module" src="components/StepCard/StepCard.js"></script>
   </body>
 </html>
