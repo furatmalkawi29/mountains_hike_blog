@@ -21,6 +21,10 @@ class Content extends HTMLElement {
 
     window.addEventListener("scroll", (e) => parallaxScrollHandler(window, shadowRoot));
   }
+
+  disconnectedCallback() {
+    window.removeEventListener("scroll", (e) => parallaxScrollHandler(window, shadowRoot));
+  }
 }
 
 customElements.define("page-content", Content);

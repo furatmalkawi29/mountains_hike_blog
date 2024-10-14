@@ -17,8 +17,10 @@ class Hero extends HTMLElement {
     this.initializeTemplate();
     const templateContent = this.template?.content?.cloneNode(true);
     shadowRoot.appendChild(templateContent);
-
     window.addEventListener("scroll", (e) => parallaxScrollHandler(window, shadowRoot));
+  }
+  disconnectedCallback() {
+    window.removeEventListener("scroll", (e) => parallaxScrollHandler(window, shadowRoot));
   }
 }
 
