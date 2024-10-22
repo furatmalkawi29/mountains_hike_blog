@@ -4,21 +4,24 @@ const heroTemplate = `
 /*/////////////::: Component Styles :::///////////////*/
 
 .Hero__layer {
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
+    background-blend-mode: multiply;
 }
 
 .Hero__layer.Layer-no1 {
-    background-image: url(https://mntn.krystonschwarze.com/images/HG-p-1080.png);
+    background: rgba(49, 46, 61, 0.2) url(https://mntn.krystonschwarze.com/images/HG-p-1080.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 0px;
     transition: transform 300ms ease-out;
 }
 
 .Hero__layer.Layer-no2 {
     background-image: url(https://mntn.krystonschwarze.com/images/MG-p-1600.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 40%;
     transition: transform 300ms ease-out;
 }
@@ -47,9 +50,9 @@ const heroTemplate = `
 .Heading--secondary {
     color: var(--secondary-font-color, #FBD784);
     font-family: "Dosis", sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    letter-spacing: 0.25rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
 
